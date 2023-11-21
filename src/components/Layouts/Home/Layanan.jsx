@@ -15,13 +15,15 @@ const Layanan = () => {
                 <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row justify-between text-center lg:text-left">
                     <h3
                         className="text-dark text-2xl font-poppins font-semibold not-italic leading-normal capitalize flex-1"
-                        data-aos="fade-right"
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
                     >
                         daftar layanan
                     </h3>
                     <p
                         className="text-second font-sora text-base not-italic font-normal leading-6 flex-1"
-                        data-aos="fade-left"
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
                     >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Nam consequuntur quia temporibus, voluptate

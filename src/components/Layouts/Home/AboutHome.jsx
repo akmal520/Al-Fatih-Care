@@ -16,7 +16,7 @@ const AboutHome = () => {
                 <div className="flex flex-col-reverse lg:flex-row justify-between items-center">
                     <div
                         className="rounded-[24px] group"
-                        data-aos="fade-right"
+                        data-aos="fade-up"
                         data-aos-duration="1000"
                     >
                         <img
@@ -28,7 +28,7 @@ const AboutHome = () => {
 
                     <div
                         className="inline-flex flex-col items-start lg:w-[485px] lg:h-[272px]"
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-duration="1000"
                     >
                         <h1 className="text-3xl text-dark font-poppins font-semibold not-italic leading-normal">
@@ -53,7 +53,7 @@ const AboutHome = () => {
                 <div className="flex lg:flex-row-reverse justify-between items-center mt-36">
                     <div
                         className="rounded-[24px] group"
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-duration="1000"
                     >
                         <img
@@ -67,7 +67,7 @@ const AboutHome = () => {
 
                     <div
                         className="inline-flex flex-col items-start w-[485px] h-[272px]"
-                        data-aos="fade-right"
+                        data-aos="fade-up"
                         data-aos-duration="1000"
                     >
                         <h1 className="text-3xl text-dark font-poppins font-semibold not-italic leading-normal">

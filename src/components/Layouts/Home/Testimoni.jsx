@@ -13,7 +13,7 @@ const Testimoni = () => {
                 <div className="text-center inline-flex flex-col gap-4 lg:w-[676px]">
                     <h1
                         className="text-dark text-2xl lg:text-3xl font-poppins font-semibold not-italic leading-normal capitalize"
-                        data-aos="fade-right"
+                        data-aos="fade-down"
                         data-aos-offset="200"
                         data-aos-duration="500"
                     >
@@ -21,7 +21,7 @@ const Testimoni = () => {
                     </h1>
                     <p
                         className="text-second font-sora text-sm lg:text-base not-italic font-normal leading-6"
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         data-aos-offset="200"
                         data-aos-duration="500"
                     >
