@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { IoLogoWhatsapp } from 'react-icons/io5';
 import { LuCalendarDays } from 'react-icons/lu';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Pelayanan = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
     return (
-        <section className="container mx-auto my-16">
+        <section
+            className="container mx-auto my-16"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+        >
             <main className="mt-32 lg:mt-24 bg-[linear-gradient(96deg,#3A8EF6_-10.84%,#6F3AFA_196.74%)] shadow-[0px_20px_24px_0px_rgba(65,132,247,0.24)] rounded-[32px] py-10 px-6 lg:py-16 lg:px-56 flex flex-col items-center justify-center select-none">
                 <h1 className="text-xl lg:text-3xl text-center lg:text-left text-white font-poppins font-semibold not-italic leading-normal capitalize">
                     reservasi pelayanan kami sekarang

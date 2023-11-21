@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BsBandaid } from 'react-icons/bs';
 import { PiHeartbeat, PiSyringe } from 'react-icons/pi';
 import CardLayanan from '../../Fragments/CardLayanan';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Layanan = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
     return (
         <section className="container mx-auto my-16">
             <main className="pt-16">
                 <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row justify-between text-center lg:text-left">
-                    <h3 className="text-dark text-2xl font-poppins font-semibold not-italic leading-normal capitalize flex-1">
+                    <h3
+                        className="text-dark text-2xl font-poppins font-semibold not-italic leading-normal capitalize flex-1"
+                        data-aos="fade-right"
+                    >
                         daftar layanan
                     </h3>
-                    <p className="text-second font-sora text-base not-italic font-normal leading-6 flex-1">
+                    <p
+                        className="text-second font-sora text-base not-italic font-normal leading-6 flex-1"
+                        data-aos="fade-left"
+                    >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Nam consequuntur quia temporibus, voluptate
                         voluptatum totam dolores repellendus.
@@ -39,7 +50,7 @@ const Layanan = () => {
                             />
                         </div>
                     </div> */}
-                    <CardLayanan>
+                    <CardLayanan anim="zoom-in" animDuration="1000">
                         <CardLayanan.Header
                             title="penangan luka"
                             bg="bg-[#855FCE]"
@@ -52,7 +63,7 @@ const Layanan = () => {
                         </CardLayanan.Body>
                         <CardLayanan.Footer />
                     </CardLayanan>
-                    <CardLayanan>
+                    <CardLayanan anim="zoom-in" animDuration="2000">
                         <CardLayanan.Header
                             title="medical check up"
                             bg="bg-[#27AE60]"
@@ -65,7 +76,7 @@ const Layanan = () => {
                         </CardLayanan.Body>
                         <CardLayanan.Footer />
                     </CardLayanan>
-                    <CardLayanan>
+                    <CardLayanan anim="zoom-in" animDuration="3000">
                         <CardLayanan.Header
                             title="profesional doctor"
                             bg="bg-[#2F80ED]"

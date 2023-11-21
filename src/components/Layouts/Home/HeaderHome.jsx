@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ImgHeader from '../../../assets/header.svg';
 import Button from '../../Elements/Button';
 import { FaStethoscope } from 'react-icons/fa';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const HeaderHome = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
     return (
-        <section className="container mx-auto w-full min-h-[80vh] flex justify-center select-none mt-28 lg:mt-0">
+        <section
+            className="container mx-auto w-full min-h-[80vh] flex justify-center select-none mt-28 lg:mt-0"
+            data-aos="fade-up"
+        >
             <main className="flex flex-col lg:flex-row justify-between gap-4">
                 <div className="flex flex-col justify-center">
                     <h1 className="font-poppins text-2xl lg:text-4xl not-italic font-bold leading-normal bg-[#1678F2] bg-[linear-gradient(96deg,#3A8EF6_-10.84%,#6F3AFA_196.74%)] bg-clip-text text-transparent">

@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '../Elements/Button';
 import { IoLogoWhatsapp } from 'react-icons/io5';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const CardLayanan = (props) => {
-    const { children } = props;
+    const { children, anim, animDuration } = props;
+    useEffect(() => {
+        Aos.init();
+    }, []);
     return (
-        <div className="bg-white flex flex-col items-center rounded-[24px] shadow-[0px_24px_32px_-3px_rgba(3,9,50,0.04)]  hover:shadow-[0px_24px_32px_-3px_rgba(3,9,50,0.22)] hover:scale-105 hover:cursor-pointer transition-all duration-300 ease-in-out p-8 select-none group">
+        <div
+            className="bg-white flex flex-col items-center rounded-[24px] shadow-[0px_24px_32px_-3px_rgba(3,9,50,0.04)]  hover:shadow-[0px_24px_32px_-3px_rgba(3,9,50,0.22)] hover:scale-105 hover:cursor-pointer transition-all duration-300 ease-in-out p-8 select-none group"
+            data-aos={anim}
+            data-aos-duration={animDuration}
+        >
             {children}
         </div>
     );

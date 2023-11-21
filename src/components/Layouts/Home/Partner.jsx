@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { imgPartner } from '../../../constant/imgPartner';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Partner = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
     return (
-        <section className="bg-[#E2EDFF] my-8">
+        <section
+            className="bg-[#E2EDFF] my-8"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+        >
             <main className="container mx-auto py-12">
                 <h1 className="capitalize text-center font-poppins text-xl lg:text-3xl text-[#031432] font-semibold not-italic leading-normal">
                     partner & friend

@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ImgBuilding from '../../../assets/building-cropped.svg';
 import ImgCircle from '../../../assets/Group 9419.svg';
 import Button from '../../Elements/Button';
 import { IoLogoWhatsapp } from 'react-icons/io5';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutHome = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
     return (
         <section className="container mx-auto my-16" id="about">
             <main className="pt-24">
                 <div className="flex flex-col-reverse lg:flex-row justify-between items-center">
-                    <div className="rounded-[24px] group">
+                    <div
+                        className="rounded-[24px] group"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                    >
                         <img
                             src={ImgBuilding}
                             alt="img"
@@ -17,7 +26,11 @@ const AboutHome = () => {
                         />
                     </div>
 
-                    <div className="inline-flex flex-col items-start lg:w-[485px] lg:h-[272px]">
+                    <div
+                        className="inline-flex flex-col items-start lg:w-[485px] lg:h-[272px]"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                    >
                         <h1 className="text-3xl text-dark font-poppins font-semibold not-italic leading-normal">
                             Pelayanan terbaik dari para Ahli Medis
                         </h1>
@@ -38,7 +51,11 @@ const AboutHome = () => {
                 </div>
 
                 <div className="flex lg:flex-row-reverse justify-between items-center mt-36">
-                    <div className="rounded-[24px] group">
+                    <div
+                        className="rounded-[24px] group"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                    >
                         <img
                             src={ImgCircle}
                             alt="img"
@@ -48,7 +65,11 @@ const AboutHome = () => {
                         />
                     </div>
 
-                    <div className="inline-flex flex-col items-start w-[485px] h-[272px]">
+                    <div
+                        className="inline-flex flex-col items-start w-[485px] h-[272px]"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                    >
                         <h1 className="text-3xl text-dark font-poppins font-semibold not-italic leading-normal">
                             Fasilitas Mewah yang memanusiakan manusia
                         </h1>
