@@ -11,7 +11,7 @@ const CardLayanan = (props) => {
     }, []);
     return (
         <div
-            className="bg-white flex flex-col items-center rounded-[24px] shadow-[0px_24px_32px_-3px_rgba(3,9,50,0.04)]  hover:shadow-[0px_24px_32px_-3px_rgba(3,9,50,0.22)] hover:scale-105 hover:cursor-pointer transition-all duration-300 ease-in-out p-8 select-none group"
+            className="bg-white flex flex-col items-center rounded-[24px] shadow-[0px_24px_32px_-3px_rgba(3,9,50,0.04)]  hover:shadow-[0px_24px_32px_-3px_rgba(3,9,50,0.22)] hover:!scale-105 hover:cursor-pointer transition-all duration-75 ease-in-out p-8 select-none group"
             data-aos={anim}
             data-aos-duration={animDuration}
         >

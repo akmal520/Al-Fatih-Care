@@ -34,7 +34,7 @@ const Testimoni = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                     {[1, 2, 3, 4].map((item, index) => (
                         <div
-                            className=" lg:w-[471px] p-8 bg-white hover:shadow-[0px_24px_32px_-3px_rgba(3,9,50,0.15)] rounded-[32px] inline-flex flex-col items-start gap-3 border border-gray-100 hover:scale-105 transition-all duration-300 ease-in-out select-none"
+                            className=" lg:w-[471px] p-8 bg-white hover:shadow-[0px_24px_32px_-3px_rgba(3,9,50,0.15)] rounded-[32px] inline-flex flex-col items-start gap-3 border border-gray-100 hover:!scale-105 transition-all duration-75 ease-in-out select-none"
                             data-aos="flip-down"
                             data-aos-offset="200"
                             data-aos-duration="500"

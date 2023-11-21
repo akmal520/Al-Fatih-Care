@@ -65,7 +65,7 @@ const Layanan = () => {
                         </CardLayanan.Body>
                         <CardLayanan.Footer />
                     </CardLayanan>
-                    <CardLayanan anim="zoom-in" animDuration="2000">
+                    <CardLayanan anim="zoom-in" animDuration="1000">
                         <CardLayanan.Header
                             title="medical check up"
                             bg="bg-[#27AE60]"
@@ -78,7 +78,7 @@ const Layanan = () => {
                         </CardLayanan.Body>
                         <CardLayanan.Footer />
                     </CardLayanan>
-                    <CardLayanan anim="zoom-in" animDuration="3000">
+                    <CardLayanan anim="zoom-in" animDuration="1000">
                         <CardLayanan.Header
                             title="profesional doctor"
                             bg="bg-[#2F80ED]"
