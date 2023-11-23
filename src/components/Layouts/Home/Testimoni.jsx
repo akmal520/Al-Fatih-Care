@@ -58,7 +58,7 @@ const Testimoni = () => {
                                         Akmal Bentar S
                                     </h3>
                                     <p className="text-second font-sora text-sm not-italic font-normal leading-normal">
-                                        Web Designer
+                                        Web Developer
                                     </p>
                                 </div>
                             </div>
