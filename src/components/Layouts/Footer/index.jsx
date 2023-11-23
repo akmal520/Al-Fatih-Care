@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { footerNav } from '../../../constant/footerNav';
 
 const Footer = () => {
+    const year = new Date().getFullYear();
     return (
         <footer className="bg-[#0A0E31] mt-40">
             <main className="container mx-auto py-12 select-none">
