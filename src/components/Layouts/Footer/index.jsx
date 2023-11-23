@@ -65,7 +65,7 @@ const Footer = () => {
                     <hr className="my-10" />
                     <div className="flex flex-row justify-center items-center">
                         <span className="text-white text-sm font-sora font-normal not-italic leading-normal opacity-80">
-                            Copyright © Al-Fatih Care 2022.
+                            Copyright © Al-Fatih Care {year}.
                         </span>
                     </div>
                 </div>
